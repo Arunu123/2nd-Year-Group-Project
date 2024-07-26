@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register</title>
+	<link rel="stylesheet" href="css/he.css"/> <!--Header & Footer--->
+	<link rel="stylesheet" href="css/register.css"/>
+	<script src="js/register.js"></script>
+</head>
+<body>
+
+	<!--Header-->
+
+	<div id="bcolor">    
+        <table  width="100%">
+            <tr>
+                <td>	<a href=""><img src="images/bg.avif" class="logo" alt="*The logo of our Gymnasium*" /></a></td>
+                <td class="col1"><h1 class="title">Ironcity Gymnasium</h1></td>
+
+                <td class="col2" >
+                        
+                        <a href="login.php">
+                                    <button class="btn1" > Login</button></a><img src="images/login.png" id="accp" align="center" alt="*The logo of login*" />
+
+                </td>
+             </tr>
+                    
+        </table>
+	
+	</div>				
+<!----Header close---->
+		
+
+<!--Navigation bar-->
+<ul class="menu">
+		<li class="menu"> <a href="view.html"> Home</a> </li>
+		<li class="menu"> <a href="Packages.html"> Packages</a></li>
+		<li class="menu"> <a href="membership.html"> Membership</a></li>
+		<li class="menu"> <a href="FindUs.html"> Find Us</a></li>
+		<li class="menu"> <a href="AboutUs.html"> About Us</a></li>
+	</ul>
+<hr id="test"/>
+
+
+<div id="regib">
+    <fieldset>
+<form class="form0" action="registration.php" target="" method="POST" onsubmit="return checkpassword ()">
+  
+      <div>
+<center><h1>Register Now!</h1><br />
+<p>Please fill in this form to Registration.</p>
+
+</center>
+      <hr>
+  <center>
+      <table>
+      <tr>
+          <td>
+              First Name:<br/>
+              <input type="text" name="firstname" placeholder="First Name" required>
+          </td>
+          <td>
+              Last Name:<br/>
+              <input type="text" name="lastname" placeholder="Last Name" required>
+          </td>
+      </tr>
+      <tr>
+          <td>
+              <label for="Gender">Gender</label><br/>
+              <input type="radio" name="gender" value="male" checked>Male
+              <input type="radio" name="gender" value="female">Female
+          </td>
+          <td>
+              Age:<br>
+              <input type="number" name="age" pattern="[0-9]{2}" placeholder="Age" required>
+          </td>
+      </tr>
+      <tr>
+          <td>
+              Height:<br/>
+              <input type="text" name="height" placeholder="Height" required>
+          </td>
+          <td>
+              Weight:<br/>
+              <input type="text" name="weight" placeholder="Weight" required>
+          </td>
+      </tr>
+      <tr>
+          <td >
+              Choose Your DOB:<br/>
+              <input type="date" name="dob" required>
+          </td>
+          <td>
+              NIC:<br/>
+              <input type="NIC" name="nic" pattern="[0-9]{12}" placeholder="200116404223" required>
+          </td>
+      </tr>
+
+      <tr>
+          <td colspan="2">
+              Address:<br/>
+      <textarea name="address" class="area" rows="8" cols="50" required></textarea>
+          
+              
+          </td>
+      </tr>
+      <tr>
+          <td >
+              Mobile Number:<br/>
+              <input type="phone" name="mobile" pattern="[0-9]{10}" placeholder="0714782233" required>
+          </td>
+          <td>
+              <label for="package">Choose a Package:</label>
+                    <select id="package" name="packages">
+                      <option value="Basic plan for 3 months">Basic plan for 3 months</option>
+                         <option value="6 months with Nutrition plan">6 months with Nutrition plan</option>
+                         <option value="1 Year plan with discount">1 Year plan with discount</option>
+                        
+                   </select>
+          </td>
+      </tr>
+      <tr>
+          <td colspan="2">
+              Email:<br>
+      <input type="email" name="email" placeholder="abc@gmail.com" Pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}" required>
+          </td>
+          
+      </tr>
+      <tr>
+          <td>
+              Password:<br/>
+          <input type="Password" id="pwd" name="password" placeholder="Password">
+          </td>
+          <td>
+              Re-enter Password<br/>
+          <input type="Password" id="conform" name="repassword" placeholder="Confirm Password" >
+          </td>
+      </tr>
+      <tr>
+          <td colspan="2">
+              <input type="checkBox" class="inputstyle" id="checkBox" onclick="enableButton()">Accept Privacy Police & Terms
+          </td>
+      </tr>
+      <tr>
+          <td colspan="2">
+              <center><input type="submit"  id="submitbtn" value="Register" disabled></center>
+          </td>
+      </tr>
+
+  </table>
+   <div class="container signin">
+ <p>View Register Account details? <a href="data.php">View</a>.</p>
+</div>
+</center>
+      
+
+
+  </form>
+</div>
+
+</div>
+</fieldset>
+
+<!--footer-->
+
+<footer class="footer" id="ex1" >
+	
+	<table  style="width:100%">	
+			
+
+			<tr>
+  				<td><img src ="images/net.png" alt="fbicon" class="foot-icon"> Visit :www.ironcitygym.lk<br>
+  					<img src ="images/call.png" alt="fbicon" class="foot-icon">Call Us : +94 763096425<br>
+  					<img src ="images/Location.png" alt="fbicon" class="foot-icon">Location : <a href="https://goo.gl/maps/f8wNYQcdg5M81ktY6"> Nugegalayaya, Sooriyawewa</a> <br>
+
+  				</td>
+
+
+
+				<td class="col4">
+							© All Rights Reserved.<br>
+  	       					ironcity Pvt Ltd<br>
+  							<a href="ironcitygym@gmail.com">ironcitygym12@gmail.com</a>
+  				</td>
+
+			<td >	
+				<div id="textAlign">
+  					<p class="foots">Follow Us On  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;</p>
+					<a href="/"><img src ="images/fbb.png" alt="fbicon"  width="40" height="40" > </a>
+					<a href=""><img src ="images/tweeticon.png" alt="teewticon"  width="40" height="40" ></a>
+					<a href=""><img src ="images/insticon.png" alt="yticon"  width="45" height="40" > </a>
+				</div>
+			</td>
+		
+
+		</tr>
+		
+		
+
+
+</table>
+
+</footer>
+
+
+
+
+</body>
+    
+</html>
+
+

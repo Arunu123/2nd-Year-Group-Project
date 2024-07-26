@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Payment Confirmation</title>
+    <!-- Add any necessary CSS styles here -->
+</head>
+<body>
+    <h1>Payment Confirmation</h1>
+
+    <?php
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        // Retrieve form data
+        $userName = $_POST["UserName"];
+        $cardNo = $_POST["CardNo"];
+        $cardType = $_POST["card_type"];
+        $package = $_POST["package"];
+        $amount = $_POST["Amount"];
+        $expDate = $_POST["exp_date"];
+        $cvv = $_POST["cvv"];
+        $paymentConfirmed = isset($_POST["Payment"]) ? "Yes" : "No"; // Checkbox confirmation
+
+        // Display the data in a table
+        echo "<h2>Payment Details:</h2>";
+        echo "<table border='1'>";
+        echo "<tr><th>Field</th><th>Value</th></tr>";
+        echo "<tr><td>Cardholder Name</td><td>$userName</td></tr>";
+        echo "<tr><td>Card Number</td><td>$cardNo</td></tr>";
+        echo "<tr><td>Card Type</td><td>$cardType</td></tr>";
+        echo "<tr><td>Package</td><td>$package</td></tr>";
+        echo "<tr><td>Amount</td><td>Rs.$amount</td></tr>";
+        echo "<tr><td>Expiry</td><td>$expDate</td></tr>";
+        echo "<tr><td>CVV</td><td>$cvv</td></tr>";
+        echo "<tr><td>Confirmation</td><td>$paymentConfirmed</td></tr>";
+        echo "</table>";
+    }
+    ?>
+
+</body>
+</html>

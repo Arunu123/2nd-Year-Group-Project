@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ironcity Gym</title>
+    <!-- Add Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/he.css">
+    <link rel="stylesheet" href="css/Home.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Add your custom CSS here */
+        body {
+    background-image: url('./images/payback.jpg');
+    background-size: cover; /* This ensures the image covers the entire viewport */
+    background-repeat: no-repeat; /* Prevents image from repeating */
+    background-attachment: fixed; /* Keeps the image fixed while scrolling */
+    background-position: center center; /* Center the image both horizontally and vertically */
+    /* Add any other background styles or properties as needed */
+        }
+        .card-header {
+            background-color: ""; /* Semi-transparent background for the header */
+            border-top-left-radius: 15px; /* Rounded top-left corner */
+            border-top-right-radius: 15px; /* Rounded top-right corner */
+            color:black; /* Header text color */
+            padding: 10px; /* Increase padding for header spacing */
+            
+        }
+
+        /* Additional styling for the form elements inside the card */
+        .form-control {
+            border-radius: 10px; /* Rounded input fields */
+        }
+
+        .btn-primary {
+            border-radius: 10px; /* Rounded buttons */
+            background-color: #007bff; /* Button background color (you can change this) */
+    border: none; /* Remove border */
+        }
+
+        /* Resize the image within the card */
+        .card-img {
+    max-width: 100%;
+    max-height: 500px;
+}
+
+
+        .card-body {
+            background-color:whitesmoke; /* Semi-transparent background for the card-body */
+            border-bottom-left-radius: 15px; /* Rounded bottom-left corner */
+            border-bottom-right-radius: 15px; /* Rounded bottom-right corner */
+            color: black; /* Text color */
+            padding: 20px; /* Increase padding for content spacing */
+        }
+        .card {
+    border-radius: 20px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+.btn-primary:hover {
+    background-color: #0056b3; /* Change color on hover */
+}
+
+
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#"><img src="images/bg.avif" class="logo" alt="*The logo of our Gymnasium*"></a>
+        <h1 class="navbar-text title mx-auto ">Ironcity Gymnasium</h1>
+        <button class="btn btn-light ml-auto" onclick="location.href='login.php'">Login</button>
+    </nav>
+   
+
+
+    <!-- Navigation bar -->
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <a class="nav-link" href="view.html">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="packages.html">Packages</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="membership.html">Membership</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="Findus.html">Find Us</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="aboutus.html">About Us</a>
+        </li>
+    </ul>
+
+
+<!--Page Content-->
+<div class="mainscreen">
+        <div class="container mt-5">
+            <div class="card">
+                <div class="card-header">
+                    <h2 class="text-center">Payment Information</h2>
+                </div>
+               <div class="card-body">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="circle-image">
+                <img src="./images/dollor.jpg" class="img-fluid" alt="payment">
+            </div>
+            <style>
+                .circle-image {
+                    width: 500px; /* Set the width and height to your desired circle size */
+                    height: 600px;
+                    border-radius: 50%; /* Create a circular shape */
+                    overflow: hidden; /* Hide the parts of the image outside the circle */
+                }
+
+                .circle-image img {
+                    width: 100%; /* Make the image cover the entire circular container */
+                    height: 100%;
+                    object-fit: cover; /* Maintain the aspect ratio and cover the circle */
+                }
+            </style>
+                            <br><br>
+                        </div>
+                        <div class="col-md-6">
+                            <form action="payment.php" method="post">
+                                <!-- Payment Form Fields -->
+                                <div class="form-group">
+                                    <label for="UserName">Cardholder Name</label>
+                                    <input type="text" class="form-control" name="UserName" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="id_num">Email:</label>
+                                    <input type="text" name="email" id="email"  class="form-control" placeholder="abc@gmail.com" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="CardNo">Card Number</label>
+                                    <input type="number" class="form-control" name="CardNo" id="card_number" pattern="\d{16}" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="card_type">Card Type</label>
+                                    <select class="form-control" name="card_type" id="card_type" required>
+                                        <option value="">--Select a Card Type--</option>
+                                        <option value="Visa">Visa</option>
+                                        <option value="MasterCard">MasterCard</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="package">Packages</label>
+                                    <select class="form-control" name="package" id="package" required>
+                                        <option value="">--Select a package--</option>
+                                        <option value="Basic plan">Platinum Fitness</option>
+                                        <option value="6month plan">Diamond Fitness</option>
+                                        <option value="1 year plan">Royal Fitness</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="card_amount">Amount</label>
+                                    <select class="form-control" name="Amount" id="card_amount" required>
+                                        <option value="">--Package Amount--</option>
+                                        <option value="5000">Rs.5000</option>
+                                        <option value="12000">Rs.12000</option>
+                                        <option value="15000">Rs.15000</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exp_date">Expiry</label>
+                                    <input type="date" class="form-control" name="exp_date" id="exp_date" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="cvv">CVV</label>
+                                    <input type="password" class="form-control" name="cvv" id="cvv" required>
+                                </div>
+                                <div class="form-group">
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="confirm" name="Payment" value="Payment">
+                                        <label class="form-check-label" for="confirm">Confirm payment details</label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="submit" value="Pay Now" name="submit" class="btn btn-primary">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add Bootstrap JS and jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Footer -->
+
+  <!-- Add Bootstrap JS and jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<br><br>
+<!--footer-->
+
+<footer class="footer" id="ex1" >
+	
+	<table  style="width:100%">	
+			
+
+			<tr>
+  				<td><img src ="images/net.png" alt="fbicon" class="foot-icon"> Visit :www.ironcitygym.lk<br>
+  					<img src ="images/call.png" alt="fbicon" class="foot-icon">Call Us : +94 763096425<br>
+  					<img src ="images/Location.png" alt="fbicon" class="foot-icon">Location : <a href="https://goo.gl/maps/f8wNYQcdg5M81ktY6"> Nugegalayaya, Sooriyawewa</a> <br>
+
+  				</td>
+
+
+
+				<td class="col4">
+							© All Rights Reserved.<br>
+  	       					ironcity Pvt Ltd<br>
+  							<a href="ironcitygym@gmail.com">ironcitygym12@gmail.com</a>
+  				</td>
+
+			<td >	
+				<div id="textAlign">
+  					<p class="foots">Follow Us On  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;</p>
+					<a href="/"><img src ="images/fbb.png" alt="fbicon"  width="40" height="40" > </a>
+					<a href=""><img src ="images/tweeticon.png" alt="teewticon"  width="40" height="40" ></a>
+					<a href=""><img src ="images/insticon.png" alt="yticon"  width="45" height="40" > </a>
+				</div>
+			</td>
+		
+
+		</tr>
+		
+		
+
+
+</table>
+
+</footer>
+
+
+
+
+</body>
+    
+</html>
+

@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ironcity Gym</title>
+    <!-- Add Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/he.css">
+    <link rel="stylesheet" href="css/Home.css">
+    <style>
+        /* Add your custom CSS here */
+        /* Center the maintitle div */
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            background-color: rgb(90, 87, 87);
+            background-image: url(images/dar);
+            background-size:auto;
+            background-attachment: fixed;
+        }
+
+        video {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            transform: translateX(-50%) translateY(-50%);
+            z-index: -1;
+        }
+
+        html {
+            box-sizing: border-box;
+        }
+
+        *,
+        *:before,
+        *:after {
+            box-sizing: inherit;
+        }
+
+        .column {
+            float: left;
+            width: 33.3%;
+            margin-bottom: 16px;
+            padding: 0 8px;
+        }
+
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            margin: 8px;
+        }
+
+        .about-section {
+            padding: 50px;
+            text-align: center;
+            background-color: #474e5d;
+            color: white;
+        }
+
+        .container {
+            padding: 0 16px;
+        }
+
+        .container::after,
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        .title {
+            color: grey;
+        }
+
+        .button {
+            border: none;
+            outline: 0;
+            display: inline-block;
+            padding: 8px;
+            color: white;
+            background-color: #000;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .button:hover {
+            background-color: #555;
+        }
+
+        /* Hover Box Styles */
+        .hover-box {
+            width: 300px;
+            height: 500px;
+            background-color: #ffffff;
+            margin: 32px;
+            cursor: pointer;
+            transition: background-color 0.5s;
+            text-align: center;
+            padding: 10px;
+            display: inline-block;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .hover-box:hover {
+            background-color: #f0f0f0;
+        }
+
+        .hover-box img {
+            max-width: 80%;
+            max-height: 60%;
+            border-radius: 50%;
+        }
+
+        .details {
+            color: #000000;
+            margin-top: 10px;
+        }
+
+        .email {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .phone {
+            margin-top: 5px;
+            color: #000000;
+            text-decoration: none;
+        }
+
+        .email:hover,
+        .phone:hover {
+            text-decoration: underline;
+        }
+
+        /* Center the hover boxes */
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Video Background -->
+    <video autoplay muted loop>
+        <source src="images/hd1086.mov" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#"><img src="images/bg.avif" class="logo" alt="The logo of our Gymnasium"></a>
+        <h1 class="navbar-text title mx-auto "><center>Ironcity Gymnasium</center></h1>
+        <button class="btn btn-light ml-auto" onclick="location.href='login.php'">Login</button>
+    </nav>
+
+    <!-- Navigation bar -->
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <a style="color: white;" class="nav-link" href="view.html">Home</a>
+        </li>
+        <li class="nav-item">
+            <a style="color: white;" class="nav-link" href="packages.html">Packages</a>
+        </li>
+        <li class="nav-item">
+            <a style="color: white;" class="nav-link" href="membership.html">Membership</a>
+        </li>
+        <li class="nav-item">
+            <a style="color: white;" class="nav-link" href="Findus.html">Find Us</a>
+        </li>
+        <li class="nav-item">
+            <a style="color: white;" class="nav-link" href="aboutus.html">About Us</a>
+        </li>
+    </ul>
+
+    <!-- Page Content -->
+    <div class="about-section">
+      <h2 style="text-align: center; font-size: 22px; color:white;">Our Team</h2><br>
+        <p style="font-size: 16px;">A new chapter in the Sri Lankan Fitness Industry started as Ironcity Gymnasium opened 
+          its doors to the public. Ironcity Gym aims to inspire active living and give you access 
+          to credible health and fitness resources and experiences all in one comprehensive platform. 
+          We collaborate with professionals across the network to curate experiences, corporate seminars, 
+          and inspirational content as well.</p>
+
+        <p style="font-size: 16px; color:black;"><i>We have a great and a proud lead of Ms.Dewmini Pramodhya; the CEO of our 
+            company and as well as the main coach of our gymnasium. Following up we also have two great administrators
+             following up all the proceedures and are major people dealing with the reputation and success of the 'Iron City' 
+             Gym Sooriyawewa. They are - Mr.Arunu Bandara and Ms.Lochana Herath. We have a great staff and support from 
+             all the coaches. The main coaches of our gymnasium are Ms.Chanuli Gunawardane, Ms.Lakshika Weerasinghe and 
+             Ms.Chathumi Himasha. They are the main people behind the reason of the gym's success. They are very friendly 
+            coaches dealing with each member or client they get to help achieving the clients' personal or professional goals.</i></p>
+
+        <p style="font-size: 16px;">This site provides you the most effective workout packages according to your requirements, 
+          and this is the best virtual training platform in Sri Lanka. Explore the site for activities and 
+          events that may interest you, search for classes, new experiences, find healthy diets, and much more!</p>
+    </div>
+    <br>
+    <!-- Hovering Boxes -->
+    <div class="container">
+
+        <div class="hover-box">
+            <img src="images/arunu.jpg" alt="Profile Image">
+            <div class="details">
+              <h4><b>Administrator</b></h4>
+              <p style="font-size: 20px;">Arunu Bandara</p>
+              <p class="phone">Phone: +94 70 413 4339</p>
+                <p class="email"><a href="mailto:arunubandara@gmail.com">arunubandara@gmail.com</a></p>
+                
+            </div>
+        </div>
+
+        <div class="hover-box">
+          <img src="images/dew.jpg" alt="Profile Image">
+          <div class="details">
+              <h4><b>CEO & Trainer</b></h4>
+              <p style="font-size: 20px;">Dewmini Thathsarani</p>
+              <p class="phone">Phone: +94 70 116 9444</p>
+              <p class="email"><a href="mailto:dewminithathsarani@gmail.com">dewminithathsarani@gmail.com</a></p>
+              
+          </div>
+      </div>
+
+        <div class="hover-box">
+          <img src="images/lochi.jpg" alt="Profile Image">
+          <div class="details">
+              <h4><b>Administrator</b></h4>
+              <p style="font-size: 20px;">Lochana Herath</p>
+              <p class="phone">Phone: +94 70 116 9444</p>
+              <p class="email"><a href="mailto:lochanaherath@gmail.com">lochanaherath@gmail.com</a></p>
+              
+          </div>
+      </div>
+      <br><br><br><br><br><br>
+
+      <div class="hover-box">
+        <img src="images/lakshika.jpg" alt="Profile Image">
+        <div class="details">
+          <h4><b>Coach</b></h4>
+          <p style="font-size: 20px;">Lakshika Weerasinghe</p>
+          <p class="phone">Phone: +94 70 328 4681</p>
+            <p class="email"><a href="mailto:lakshikaweerasinghe@gmail.com">lakshikaweerasinghe@gmail.com</a></p>
+            
+        </div>
+    </div>
+
+      <div class="hover-box">
+          <img src="images/chanu.jpg" alt="Profile Image">
+          <div class="details">
+              <h4><b>Coach</b></h4>
+              <p style="font-size: 20px;">Chanuli Gunawardane</p>
+              <p class="phone">Phone: +94 70 413 4339</p>
+              <p class="email"><a href="mailto:chanuligunawardane@gmail.com">chanuligunawardane@gmail.com</a></p>
+              
+          </div>
+      </div>
+
+      <div class="hover-box">
+          <img src="images/chathu.jpg" alt="Profile Image">
+          <div class="details">
+              <h4><b>Coach</b></h4>
+              <p style="font-size: 20px;">Chathumi Himasha</p>
+              <p class="phone">Phone: +94 70 328 4681</p>
+              <p class="email"><a href="mailto:chathumihimasha@gmail.com">chathumihimasha@gmail.com</a></p>
+              
+          </div>
+      </div>
+    </div>
+    <br><br>
+    <!--footer-->
+
+<footer class="footer" id="ex1" >
+	
+	<table  style="width:100%">	
+			
+
+			<tr>
+  				<td><img src ="images/net.png" alt="fbicon" class="foot-icon"> Visit :www.ironcitygym.lk<br>
+  					<img src ="images/call.png" alt="fbicon" class="foot-icon">Call Us : +94 763096425<br>
+  					<img src ="images/Location.png" alt="fbicon" class="foot-icon">Location : <a href="https://goo.gl/maps/f8wNYQcdg5M81ktY6"> nugegalayaya, sooriyawewa</a> <br>
+
+  				</td>
+
+
+
+				<td class="col4">
+							© All Rights Reserved.<br>
+  	       					ironcity Pvt Ltd<br>
+  							<a href="ironcitygym@gmail.com">ironcitygym12@gmail.com</a>
+  				</td>
+
+			<td >	
+				<div id="textAlign">
+  					<p class="foots">Follow Us On  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;</p>
+					<a href="/"><img src ="images/fbb.png" alt="fbicon"  width="40" height="40" > </a>
+					<a href=""><img src ="images/tweeticon.png" alt="teewticon"  width="40" height="40" ></a>
+					<a href=""><img src ="images/insticon.png" alt="yticon"  width="45" height="40" > </a>
+				</div>
+			</td>
+		
+
+		</tr>
+		
+		
+
+
+</table>
+
+</footer>
+
+</body>
+
+</html>

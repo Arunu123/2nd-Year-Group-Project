@@ -1,0 +1,95 @@
+<!-- enroll_page.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ... (head content, including CSS and any other dependencies) ... -->
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .enroll-form {
+            max-width: 400px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ddd;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: blue;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: black;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: green;
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        button:hover {
+            background-color: darkgreen;
+        }
+    </style>
+</head>
+<body>
+    <div class="enroll-form">
+        <h2>Enrollment Form</h2>
+        <form id="enrollmentForm">
+            <label for="userName">Your Name:</label>
+            <input type="text" id="userName" name="userName" readonly>
+            
+            <label for="coachName">Coach Name:</label>
+            <input type="text" id="coachName" name="coachName" readonly>
+
+            <label for="scheduledTime">Scheduled Time:</label>
+            <input type="text" id="scheduledTime" name="scheduledTime" readonly>
+
+            <label for="scheduledDate">Scheduled Date:</label>
+            <input type="text" id="scheduledDate" name="scheduledDate" readonly>
+
+            <!-- Additional enrollment form fields can be added here -->
+
+            <button type="button" onclick="saveEnrollment()">Save</button>
+        </form>
+    </div>
+
+    <script>
+        // Add this script to your enroll_page.html
+document.addEventListener('DOMContentLoaded', function () {
+    // Retrieve values from sessionStorage
+    var userName = sessionStorage.getItem('userName') || '';
+    var coachName = sessionStorage.getItem('coachName') || '';
+    var scheduledTime = sessionStorage.getItem('scheduledTime') || '';
+    var scheduledDate = sessionStorage.getItem('scheduledDate') || '';
+
+    // Populate the enrollment form
+    document.getElementById('userName').value = userName;
+    document.getElementById('coachName').value = coachName;
+    document.getElementById('scheduledTime').value = scheduledTime;
+    document.getElementById('scheduledDate').value = scheduledDate;
+});
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ironcity Gym</title>
+    <!-- Add Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/findus.css">
+    <link rel="stylesheet" href="css/contact_us.css">
+    <style>
+        /* Add your custom CSS here */
+    </style>
+</head>
+
+<body style="background-image: url(images/1234.jpg);">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#"><img src="images/bg.avif" class="logo" alt="*The logo of our Gymnasium*"></a>
+        <h1 class="navbar-text title mx-auto">Ironcity Gymnasium</h1>
+        <button class="btn btn-light ml-auto" onclick="location.href='login.php'">Login</button>
+    </nav>
+
+    <!-- Navigation bar -->
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <a class="nav-link" href="view.html">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="packages.html">Packages</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="membership.html">Membership</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="Findus.html">Find Us</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="aboutus.html">About Us</a>
+        </li>
+    </ul>
+
+    <!-- Centered Find Us and Contact Us sections -->
+   <br><br>
+        <div class="Background-Contact">
+            <div class="Contact-detail">
+                <h3><center>Contact Us</center></h3>
+                <ul class="Contact-Content">
+                    <li>Contact Us:</li>
+                    <ul>011-2355611</ul><br>
+                    <li>Email Us:</li>
+                    <ul>ironcitygym@gmail.com</ul><br>
+                    <li>Head Office:</li>
+                    <ul> Nugegalayaya <br> Sooriyawewa</ul>
+                </ul>
+
+                <div class="social-btn">
+                    <img src="images/fblg.png">
+                    <img src="images/twlg.png">
+                    <img src="images/gglg.png">
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact and Help & Support buttons -->
+        <div id="btnl">
+            <center>
+                <button type="button" class="Contact-btn" onclick="toggleForm('ContactUs')">Contact Us</button>
+              
+            </center>
+        </div>
+
+        <!-- Contact Us Form -->
+		<head>
+            <title>Contact</title>
+            <meta charset="UTF-8">
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+            <link rel="stylesheet" type="text/css" href="./dashboard/vendors/styles/icon-font.min.css">
+         
+        </head>
+        <body>
+             
+            <div class="centered-section">
+                <div class="Contact-detail2" id="ContactUs">
+                
+                <form class="contact-form" method="post" action="send-email.php">
+                    
+                    <legend><font size="5px">Contact Us</font></legend><br>
+                 
+                    <!-- Form inputs go here -->
+               
+                    <label for="name">Name</label>
+                    <input type="text" name="GuestName" id="name" required>
+        
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required>
+        
+        
+                    <label for="message">Message</label>
+                    <textarea name="Message" id="message" required></textarea>
+        
+                    <button  class="submit"type="submit" name="Submit">Send</button>
+                </form>
+                </form>
+            </div>
+
+        
+<br><br><br>
+    <!--footer-->
+
+<footer class="footer" id="ex1" >
+	
+	<table  style="width:100%">	
+			
+
+			<tr>
+  				<td><img src ="images/net.png" alt="fbicon" class="foot-icon"> Visit :www.ironcitygym.lk<br>
+  					<img src ="images/call.png" alt="fbicon" class="foot-icon">Call Us : +94 763096425<br>
+  					<img src ="images/Location.png" alt="fbicon" class="foot-icon">Location : <a href="https://goo.gl/maps/f8wNYQcdg5M81ktY6"> Nugegalayaya, Sooriyawewa</a> <br>
+
+  				</td>
+
+
+
+				<td class="col4">
+							© All Rights Reserved.<br>
+  	       					ironcity Pvt Ltd<br>
+  							<a href="ironcitygym@gmail.com">ironcitygym12@gmail.com</a>
+  				</td>
+
+			<td >	
+				<div id="textAlign">
+  					<p class="foots">Follow Us On  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;</p>
+					<a href="/"><img src ="images/fbb.png" alt="fbicon"  width="40" height="40" > </a>
+					<a href=""><img src ="images/tweeticon.png" alt="teewticon"  width="40" height="40" ></a>
+					<a href=""><img src ="images/insticon.png" alt="yticon"  width="45" height="40" > </a>
+				</div>
+			</td>
+		
+
+		</tr>
+		
+		
+
+
+</table>
+
+</footer>
+</body>
+
+<!-- CSS (Add your custom styles in your CSS files) -->
+<style>
+    /* Global styles */
+ 
+    .centered-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 80vh; /* Adjust the minimum height to center the content */
+    }
+
+    /* Rest of your CSS styles */
+</style>
+
+<!-- JavaScript (Add this script at the end of your HTML file or in an external script file) -->
+<script>
+    function toggleForm(formId) {
+        const contactUsForm = document.getElementById('ContactUs');
+        const helpSupportForm = document.getElementById('Help_Support');
+
+        if (formId === 'ContactUs') {
+            contactUsForm.style.display = 'block';
+            helpSupportForm.style.display = 'none';
+        } else if (formId === 'Help_Support') {
+            contactUsForm.style.display = 'none';
+            helpSupportForm.style.display = 'block';
+        }
+    }
+</script>
+
+</html>

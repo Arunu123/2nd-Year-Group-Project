@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ironcity Gym</title>
+    <!-- Add Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/he.css">
+    <link rel="stylesheet" href="css/Home.css">
+
+    <!-- Add Bootstrap CSS link -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<!-- Add Bootstrap JS and Popper.js links (required for some Bootstrap features) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+
+	
+    <style>
+        /* Add your custom CSS here */
+		body {
+            background-color: #151515;
+    background-image: url('.');
+    background-size: cover; /* This ensures the image covers the entire viewport */
+    background-repeat: no-repeat; /* Prevents image from repeating */
+    background-attachment: fixed; /* Keeps the image fixed while scrolling */
+    background-position: center center; /* Center the image both horizontally and vertically */
+    /* Add any other background styles or properties as needed */
+}
+
+/*---------------------
+  Pricing Section
+-----------------------*/
+
+.pricing-section {
+	background: #151515;
+}
+
+.pricing-section .section-title {
+	margin-bottom: 60px;
+    color: #c4c4c4;
+}
+
+.ps-item {
+	text-align: center;
+	padding: 40px 30px 52px;
+	border: 1px solid #464646;
+	-webkit-transform: skewY(-4deg);
+	-ms-transform: skewY(-4deg);
+	transform: skewY(-4deg);
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+	margin-bottom: 30px;
+	position: relative;
+}
+
+.ps-item:hover {
+	background: #ffffff;
+	border-color: #ffffff;
+}
+
+.ps-item:hover h3 {
+	color: #111111;
+}
+
+.ps-item:hover .pi-price span {
+	color: #444444;
+}
+
+.ps-item:hover ul li {
+	color: #111111;
+	font-weight: 600;
+}
+
+.ps-item:hover .primary-btn.pricing-btn {
+	background: #f36100;
+    color:aliceblue;
+}
+
+.ps-item:hover .thumb-icon {
+	opacity: 1;
+	visibility: visible;
+}
+
+.ps-item h3 {
+	font-size: 28px;
+	color: #ffffff;
+	font-weight: 600;
+	margin-bottom: 16px;
+	-webkit-transform: skewY(4deg);
+	-ms-transform: skewY(4deg);
+	transform: skewY(4deg);
+}
+
+.ps-item .pi-price {
+	margin-bottom: 30px;
+	-webkit-transform: skewY(4deg);
+	-ms-transform: skewY(4deg);
+	transform: skewY(4deg);
+}
+
+.ps-item .pi-price h2 {
+	font-size: 40px;
+	color: #f36100;
+	font-weight: 600;
+}
+
+.ps-item .pi-price span {
+	color: #c4c4c4;
+	font-size: 16px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.ps-item ul {
+	margin-bottom: 40px;
+	-webkit-transform: skewY(4deg);
+	-ms-transform: skewY(4deg);
+	transform: skewY(4deg);
+}
+
+.ps-item ul li {
+	font-size: 14px;
+	color: #c4c4c4;
+	line-height: 32px;
+	list-style: none;
+}
+
+.ps-item .primary-btn.pricing-btn {
+	display: block;
+	background: #333333;
+	-webkit-transform: skewY(4deg);
+	-ms-transform: skewY(4deg);
+	transform: skewY(4deg);
+}
+
+.ps-item .thumb-icon {
+	font-size: 48px;
+	color: #f36100;
+	position: absolute;
+	left: 50px;
+	bottom: 120px;
+	-webkit-transform: skewY(4deg);
+	-ms-transform: skewY(4deg);
+	transform: skewY(4deg);
+	opacity: 0;
+	visibility: hidden;
+}
+
+
+     
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#"><img src="images/bg.avif" class="logo" alt="*The logo of our Gymnasium*"></a>
+        <h1 class="navbar-text title mx-auto ">Ironcity Gymnasium</h1>
+        <button class="btn btn-light ml-auto" onclick="location.href='login.php'">Login</button>
+    </nav>
+
+    <!-- Navigation bar -->
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <a class="nav-link" href="view.html">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="packages.html">Packages</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="membership.html">Membership</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="Findus.html">Find Us</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="aboutus.html">About Us</a>
+        </li>
+    </ul>
+
+
+ <!-- Pricing Section Begin -->
+<section class="pricing-section service-pricing spad">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-title"><br><br><br>
+                    <span>Our Plans</span>
+                    <h2>Choose your desired package</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-4">
+                <div class="ps-item text-center">
+                    <h3><b>Royal Fitness</b> </h3>
+                    <div class="pi-price">    
+                        <h2>RS.5000</h2>
+                        <span>Basic plan for 3 months</span>
+                    </div>
+                    <ul class="text-left">
+                        <li>Elevate your fitness journey to platinum status with our Platinum Fitness Elite package. 
+                            This premium membership offers an unmatched fitness experience, including <b>24/7</b> gym access, personalized workout plans from our expert trainers, 
+                            unlimited access to all classes, priority booking for personal training sessions, spa and sauna access, and exclusive access to elite fitness events and workshops.</li>
+                        
+                    </ul>
+                    <div class="ps-item-footer">
+                        
+                        <a href="#" class="thumb-icon"><i class="fa fa-picture-o"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4">
+                <div class="ps-item text-center">
+                    <h3><b>Diamond Fitness</b></h3>
+                    <div class="pi-price">
+                        <h2>RS.12000</h2>
+                        <span>6 Month with nutrition</span>
+                    </div>
+                    <ul class="text-left">
+                        <li>Join our Diamond Fitness and experience the pinnacle of health and well-being.
+                             This elite membership includes <b>24/7</b> gym access, a dedicated personal wellness coach, 
+                             access to premium fitness and wellness classes, spa and relaxation amenities, priority scheduling for holistic wellness consultations, 
+                             and exclusive invitations to luxury wellness retreats.</li>
+                    </ul>
+                    <div class="ps-item-footer">
+                        
+                        <a href="#" class="thumb-icon"><i class="fa fa-picture-o"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4">
+                <div class="ps-item text-center">
+                    <h3><b>Platinum Fitness</b></h3>
+                    <div class="pi-price">
+                        <h2>RS.15000</h2>
+                        <span>1 Year plan with discount</span>
+                    </div>
+                    <ul class="text-left">
+                        <li> Indulge in the Royal Fitness Experience and discover the ultimate in fitness luxury. 
+                            This top-tier membership offers <b>24/7</b> gym access, a personal fitness concierge,
+                             unlimited access to all classes and specialty programs, spa and relaxation access, priority booking for personal training sessions,
+                              complimentary nutrition consultations, and exclusive invitations to high-end fitness events and retreats.</li>
+                        
+                    </ul>
+                    <div class="ps-item-footer">
+                        
+                        <a href="#" class="thumb-icon"><i class="fa fa-picture-o"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Pricing Section End -->
+
+
+
+
+<br><br><br>
+
+<!--Page Content End-->
+
+
+<!--footer-->
+
+<footer class="footer" id="ex1" >
+	
+	<table  style="width:100%">	
+			
+
+			<tr>
+  				<td><img src ="images/net.png" alt="fbicon" class="foot-icon"> Visit :www.ironcitygym.lk<br>
+  					<img src ="images/call.png" alt="fbicon" class="foot-icon">Call Us : +94 763096425<br>
+  					<img src ="images/Location.png" alt="fbicon" class="foot-icon">Location : <a href="https://goo.gl/maps/f8wNYQcdg5M81ktY6"> Nugegalayaya, Sooriyawewa</a> <br>
+
+  				</td>
+
+
+
+				<td class="col4">
+							© All Rights Reserved.<br>
+  	       					ironcity Pvt Ltd<br>
+  							<a href="ironcitygym@gmail.com">ironcitygym12@gmail.com</a>
+  				</td>
+
+			<td >	
+				<div id="textAlign">
+  					<p class="foots">Follow Us On  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;</p>
+					<a href="/"><img src ="images/fbb.png" alt="fbicon"  width="40" height="40" > </a>
+					<a href=""><img src ="images/tweeticon.png" alt="teewticon"  width="40" height="40" ></a>
+					<a href=""><img src ="images/insticon.png" alt="yticon"  width="45" height="40" > </a>
+				</div>
+			</td>
+		
+
+		</tr>
+		
+		
+
+
+</table>
+
+</footer>
+
+
+
+
+</body>
+    
+</html>
